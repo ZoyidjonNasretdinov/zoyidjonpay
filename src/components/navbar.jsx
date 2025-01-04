@@ -49,7 +49,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggleNav ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 left-0 w-full sidebar`}
+          } p-6 bg-black-gradient justify-center absolute top-20 right-0 left-0 w-full sidebar`}
         >
           <ul className="list-none flex flex-row justify-center items-center gap-6 ">
             {navigationLinks.map((nav) => (

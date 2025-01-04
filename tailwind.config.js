@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'text-radial': 'radial-gradient(64.18% 64.18% 71.16% 35.69%, #def9fa 0.89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%)',
+      },
       colors: {
         primary: '#00040f',
         secondary: '#00f6ff',
