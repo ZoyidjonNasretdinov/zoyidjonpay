@@ -18,7 +18,7 @@ export const navigationLinks = [
 
 ]
 
-const statistics = [
+export const statistics = [
   {
     id: 1,
     title: 'Foydalanuvchi Faol',
@@ -32,6 +32,6 @@ const statistics = [
   {
     id: 3,
     title: 'Tranzaksiya',
-    value: '+100M+',
-  }
-]
+    value: '100M+',
+  },
+];
