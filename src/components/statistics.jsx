@@ -1,5 +1,5 @@
+import { statistics } from "../util/constant";
 import { styles } from "../util/style";
-import { statistics } from "../util/constants";
 
 const Statistics = () => {
   return (

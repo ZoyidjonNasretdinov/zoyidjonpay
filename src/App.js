@@ -1,32 +1,53 @@
-import Navbar from './components/navbar';
-import Home from './components/home';
+import React from 'react';
+import './App.css';
+import {
+	Billing,
+	Business,
+	Clients,
+	Contract,
+	CTA,
+	Footer,
+	Home,
+	Navbar,
+	Statistics,
+	Testimonials,
+} from './components';
 import { styles } from './util/style';
-import Statistics from './components/statistics';
 
 const App = () => {
-  return (
-    <div className="bg-primary w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.container}`}>
-          <Navbar />
-        </div>
-      </div>
-      
-      {/* home section */}
-      <div className={`bg-primary ${styles.flexStart}`}>
-        <div className={`${styles.container}`}>
-          <Home />
-        </div>
-      </div>
+	return (
+		<div className='bg-primary w-full overflow-hidden'>
+			{/* Navbar */}
+			<div className={`${styles.paddingX} ${styles.flexStart} `}>
+				<div className={`${styles.container}`}>
+					<Navbar />
+				</div>
+			</div>
 
-      {/*  */}
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.container}`}>
-          <Statistics />
-        </div>
-      </div>
-    </div>
-  );
+			{/* Home */}
+			<div className={`${styles.flexStart}`}>
+				<div className={`${styles.container}`}>
+					<Home />
+				</div>
+			</div>
+
+			{/* Statistics */}
+			<div
+				className={`bg-primary ${styles.paddingX} ${styles.flexStart} `}
+			>
+				<div className={`${styles.container}`}>
+					<Statistics />
+					<Contract />
+					<Billing />
+					<Business />
+					<Testimonials />
+					<Clients />
+					<CTA />
+					<Footer />
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default App;
